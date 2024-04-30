@@ -89,25 +89,25 @@ def procurar (agd):
         achou = Lista_decontato [0]
         posicao = Lista_decontato [1]
 
-    if nome not in Lista_decontato:
-        print ("Este contato não existe, tente novamente")
+        if not achou:
+            print ("Este contato não existe, tente novamente")
     
-    else:
-    
-        print('Aniversario:',agd[posicao][1])
-        print('Endereco...:',agd[posicao][2])
-        print('Telefone...:',agd[posicao][3])
-        print('Celular....:',agd[posicao][4])
-        print('e-mail.....:',agd[posicao][5])
-        
-        digitouDireito= True
+        else:
+            digitouDireito= True
+            print('Aniversario:',agd[posicao][1])
+            print('Endereco...:',agd[posicao][2])
+            print('Telefone...:',agd[posicao][3])
+            print('Celular....:',agd[posicao][4])
+            print('e-mail.....:',agd[posicao][5])
+            
+            
 
     
 
 
     print (procurar(Lista_decontato))
-    return Lista_decontato
-    print (procurar(Lista_decontato))
+   # return Lista_decontato
+    
 
 
 def excluir (agd):
